@@ -15,26 +15,27 @@ public class Cat { // header of class; public: access modifier
 	
 	// behavior is described by methods
 	// special method called a constructor
-	public Cat() {
-		age = 0;
-		name = "";
-	}
+//	public Cat() {
+	
+//		age = 0;
+//		name = "";
+//	}
 	
 	// regular method
-	public void setName(String newName) {
+	protected void setName(String newName) {
 		name = newName;
 	}
 	
 	// regular method
-	public String getName() {
+	protected String getName() {
 		return name;
 	}
 	
-	public void setAge(int newAge) {
+	protected void setAge(int newAge) {
 		age = newAge;
 	}
 	
-	public int getAge() {
+	protected int getAge() {
 		return age;
 	}
 }

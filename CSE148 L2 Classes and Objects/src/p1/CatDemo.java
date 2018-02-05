@@ -3,7 +3,7 @@ package p1;
 public class CatDemo {
 
 	public static void main(String[] args) {
-		Cat cat1 = new Cat();
+		Cat cat1 = new Cat(); // default constructor
 		System.out.println(cat1.getName());
 		System.out.println(cat1.getAge());
 		System.out.println("-----------");
