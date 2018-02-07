@@ -20,7 +20,15 @@ public class Student {
 	public Student(String newName) {
 		name = newName;
 	}
+	
+	// bad practice. Because methods are the best when they are 
+	// pure for doing one thing and one thing only.
+	public String setAndGetName(String newName) {
+		name = newName;
+		return name;
+	}
 
+	// setter/mutator method
 	public void setAll(String newName, String newPhoneNumber, double newGpa) {
 		name = newName;
 		phoneNumber = newPhoneNumber;
@@ -31,6 +39,7 @@ public class Student {
 		name = newName;
 	}
 
+	// getter / accessor method
 	public String getName() {
 		return name;
 	}
@@ -52,7 +61,7 @@ public class Student {
 	}
 	// toString method
 	public String toString() {
-		return "Name: " + name + "\tPhone: " + phoneNumber  + "\tGPA: " + gpa;
+		return "Name: " + name + "\nPhone: " + phoneNumber  + "\nGPA: " + gpa  + "\n";
 	}
 
 }
