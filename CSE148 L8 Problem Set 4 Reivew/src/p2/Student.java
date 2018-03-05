@@ -5,13 +5,25 @@ public class Student {
 	private int id;
 	private double gpa;
 	private Address address;
+	
+	private static int idNumber;
 
 	public Student(String name, int id, double gpa, Address address) {
 		super();
 		this.name = name;
-		this.id = id;
+		this.id = ++idNumber;
 		this.gpa = gpa;
 		this.address = address;
+		
+		
+	}
+	
+	public double curveGPA(double amount) {
+		return gpa + Student.curveGPAStatic(amount);
+	}
+	
+	public static double curveGPAStatic(double amount) {
+		return amount;
 	}
 
 	public String getName() {

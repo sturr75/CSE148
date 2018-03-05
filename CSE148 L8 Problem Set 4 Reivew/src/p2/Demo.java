@@ -9,7 +9,8 @@ public class Demo {
 		Address a = s1.getAddress();
 		a.setStreetNumber("2");
 		System.out.println(s1);
-		
+		s1.setGpa(s1.curveGPA(0.2));
+		System.out.println(s1);
 		
 		
 	}
