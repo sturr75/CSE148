@@ -21,10 +21,15 @@ public class HelloWorld extends Application {
 		Label nameLbl = new Label("UserName");
 		Label passwdLbl = new Label("Password  ");
 		
+		nameLbl.setText("User Name");
+		System.out.println(nameLbl.getText());
+		
 		Button btn1 = new Button("Hello!");
 		Button btn2 = new Button("World!");
 		TextField txtField1 = new TextField();
 		txtField1.setPromptText("Username");
+		txtField1.setText("John");
+		System.out.println(txtField1.getText());
 		PasswordField txtField2 = new PasswordField();
 		txtField2.setPromptText("Password");
 		
